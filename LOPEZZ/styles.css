@@ -1,0 +1,147 @@
+ {
+
+    margin: 0; padding: 0; box-sizing: border-box;
+
+  }
+
+  html, body {
+
+    height: 100%;
+    overflow-x: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    background: #187fe7;
+    text-indent: 10px;
+    text-align: center;
+    text-shadow: 1px 2px 5px black;
+  
+  }
+
+  body {
+    display: flex;
+
+    flex-direction: row;
+
+    scroll-behavior: smooth;
+
+  }
+  
+  .profile-pic {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  background-color: #2dc3d2;
+  border-style: solid;
+  border-color: #a9fdff;
+  
+  
+  object-fit: cover;
+}
+
+
+  /* Container for all sections horizontally */
+
+  .container {
+
+    display: flex;
+
+    height: 100vh;
+
+    width: 500vw; /* 4 sections wide */
+
+    overflow-x: auto;
+
+    overflow-y: hidden;
+
+    scroll-snap-type: x mandatory;
+
+  }
+
+
+  /* Each section */
+
+  section {
+
+    flex: 0 0 100vw;
+
+    height: 100vh;
+
+    scroll-snap-align: start;
+
+    padding: 2rem;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 1.5rem;
+
+    transition: background-color 0.5s ease;
+     color: white;
+  text-shadow: 2px 2px 8px #000000;
+
+  }
+
+
+  /* Different background colors for sections */
+
+  #home {
+
+    background: linear-gradient(90deg, #6a00ff, #16a085);
+
+  }
+
+  #about {
+
+    background: linear-gradient(135deg,   #6a00ff, #16a085);
+
+  }
+
+  #education {
+
+    background: linear-gradient(135deg,  #6a00ff, #16a085);
+
+  }
+
+  #skills {
+
+    background: linear-gradient(135deg,  #6a00ff, #16a085);
+
+  }
+
+  #contact {
+
+    background: linear-gradient(135deg,  #6a00ff, #16a085);
+
+  }
+   #experience{
+
+    background: linear-gradient(135deg,  #6a00ff, #16a085);
+
+  }
+  
+#certificates{
+
+    background: linear-gradient(135deg,  #6a00ff, #16a085);
+
+  }
+  /* Navigation dots */
+
+  nav {
+
+    position: fixed;
+   
+    right: 5rem;
+    transform: translateY(-10%);
+    flex-direction: column;
+    background-color: ##060024;
+    font-family: Arial;
+   font-style:normal;
+   font-size: 20px;
+   background: #00a4ff;
+   
